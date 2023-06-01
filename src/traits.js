@@ -80,24 +80,4 @@ export default (editor, config = {}) => {
 
     const textTrait = tm.getType('text');
 
-    tm.addType('content', {
-        events: {
-            'keyup': 'onChange',
-        },
-
-        onValueChange: function () {
-            const md = this.model;
-            const target = md.target;
-            target.set('content', md.get('value'));
-        },
-
-        getInputEl: function () {
-            if (!this.inputEl) {
-                this.inputEl = textTrait.prototype.getInputEl.bind(this)();
-                this.inputEl.value = this.target.get('content');
-            }
-            return this.inputEl;
-        }
-    });
-
 }

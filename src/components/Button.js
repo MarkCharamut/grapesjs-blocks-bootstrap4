@@ -29,11 +29,7 @@ export default (dc) => {
                     role: 'button'
                 },
                 classes: ['btn'],
-                traits: [
-                    {
-                        type: 'content',
-                        label: 'Text',
-                    },
+                traits: [                    
                     {
                         label: 'Type',
                         type: 'select',
@@ -90,12 +86,11 @@ export default (dc) => {
             },
 
             init() {
-                this.listenTo(this.model, 'change:content', this.updateContent);
+                
             },
 
             updateContent() {           
-                alert(this.model.get('content'));     
-                this.el.innerHTML = this.model.get('content')
+                
             },
 
             handleClick(e) {
