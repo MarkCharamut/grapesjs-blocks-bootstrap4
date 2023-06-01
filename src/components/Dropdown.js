@@ -11,7 +11,10 @@ export const DropDownBlock = (bm, label) => {
             ${caretIcon}
             <div>${label}</div>
         `,
-        category: 'Components',
+        category: {
+            label: 'Components',
+            open: false
+        },
         content: {
             type: 'dropdown'
         }

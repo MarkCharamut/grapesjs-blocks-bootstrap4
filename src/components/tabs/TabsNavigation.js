@@ -10,7 +10,10 @@ export const TabsBlock = (bm, c) => {
             ${ellipsisIcon}
             <div>${c.labels.tabs}</div>
         `,
-        category: 'Components',
+        category: {
+            label: 'Components',
+            open: false
+        },
         content: `
             <ul class="nav nav-tabs" role="tablist">
               <li class="nav-item">
@@ -35,7 +38,10 @@ export const TabsBlock = (bm, c) => {
             ${circleIcon}
             <div>${c.labels.tab}</div>
         `,
-        category: 'Components',
+        category: {
+            label: 'Components',
+            open: false
+        },
         content: {
             type: 'tabs-tab',
         }
@@ -45,7 +51,10 @@ export const TabsBlock = (bm, c) => {
             ${windowIcon}
             <div>${c.labels.tabPane}</div>
         `,
-        category: 'Components',
+        category: {
+            label: 'Components',
+            open: false
+        },
         content: {
             type: 'tabs-tab-pane',
         }

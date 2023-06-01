@@ -6,7 +6,10 @@ import { capitalize } from "../utils";
 export const ButtonBlock = (bm, label) => {
     bm.add('button', {
         label: `${buttonIcon}<div>${label}</div>`,
-        category: 'Forms',
+        category: {
+            label: 'Forms',
+            open: false
+        },
         content: '<button class="btn btn-primary">Send</button>',
     });
 };
@@ -48,7 +51,7 @@ export default (dc) => {
                             ...contexts.map((v) => { return { value: `btn-${v}`, name: capitalize(v) } }),
                             ...contexts.map((v) => { return { value: `btn-outline-${v}`, name: capitalize(v) + ' (Outline)' } })
                         ],
-                        label: 'Context'
+                        label: 'Preset'
                     },
                     {
                         type: 'class_select',
@@ -90,7 +93,8 @@ export default (dc) => {
                 this.listenTo(this.model, 'change:content', this.updateContent);
             },
 
-            updateContent() {
+            updateContent() {           
+                alert(this.model.get('content'));     
                 this.el.innerHTML = this.model.get('content')
             },
 

@@ -6,7 +6,10 @@ export const CardBlock = (bm, c) => {
             ${cardIcon}
             <div>${c.labels.card}</div>
         `,
-    category: 'Components',
+        category: {
+          label: 'Components',
+          open: false
+      },
     content: {
       type: 'card'
     }

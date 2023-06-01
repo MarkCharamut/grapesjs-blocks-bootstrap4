@@ -6,7 +6,10 @@ export const ImageBlock = (bm, label) => {
             ${imageIcon}
             <div>${label}</div>
         `,
-        category: 'Media',
+        category: {
+            label: 'Media',
+            open: false
+        },
         content: {
             type: 'bs-image'
         }

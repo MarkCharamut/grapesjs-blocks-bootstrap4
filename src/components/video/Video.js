@@ -6,7 +6,10 @@ export const VideoBlock = (bm, label) => {
             ${videoIcon}
             <div>${label}</div>
         `,
-        category: 'Media',
+        category: {
+            label: 'Media',
+            open: false
+        },
         content: {
             type: 'bs-video'
         }

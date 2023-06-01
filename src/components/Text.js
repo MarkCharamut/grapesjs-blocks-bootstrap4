@@ -6,7 +6,10 @@ export const TextBlock = (bm, label) => {
             ${fontIcon}
             <div>${label}</div>
         `,
-        category: 'Typography',
+        category: {
+            label: 'Typography',
+            open: false
+        },
         content: {
             type: 'text',
             content: 'Insert your text here'

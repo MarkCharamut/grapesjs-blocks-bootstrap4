@@ -6,7 +6,10 @@ export const ColumnBreakBlock = (bm, label) => {
             ${equalsIcon}
             <div>${label}</div>
         `,
-        category: 'Layout',
+        category: {
+            label: 'Layout',
+            open: false
+        },
         content: {
             type: 'column_break'
         }
