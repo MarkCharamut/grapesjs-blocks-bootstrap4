@@ -6,7 +6,10 @@ export const ButtonToolbarBlock = (bm, label) => {
             ${buttonIcon}
             <div>${label}</div>
         `,
-        category: 'Forms',
+        category: {
+            label: 'Forms',
+            open: false
+        },
         content: {
             type: 'button_toolbar'
         }

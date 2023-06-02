@@ -203,4 +203,5 @@ export default grapesjs.plugins.add('grapesjs-blocks-bootstrap4', (editor, opts 
   loadComponents(editor, options);
   loadDevices(editor, options);
   loadCss(editor, options);
+  
 });

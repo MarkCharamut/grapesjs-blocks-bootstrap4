@@ -5,7 +5,10 @@ export const FormBlock = (bm, label) => {
         label: `
       ${formIcon}
       <div>${label}</div>`,
-        category: 'Forms',
+      category: {
+        label: 'Forms',
+        open: false
+    },
         content: `
         <form>
           <div class="form-group">

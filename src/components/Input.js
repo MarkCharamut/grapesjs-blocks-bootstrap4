@@ -5,7 +5,10 @@ export const InputBlock = (bm, label) => {
         label: `
       ${inputIcon}
       <div>${label}</div>`,
-        category: 'Forms',
+      category: {
+        label: 'Forms',
+        open: false
+    },
         content: '<input name="input1" class="form-control"/>',
     });
 };

@@ -6,7 +6,10 @@ export const CheckboxBlock = (bm, label) => {
             ${checkIcon}
             <div>${label}</div>
         `,
-        category: 'Forms',
+        category: {
+            label: 'Forms',
+            open: false
+        },
         content: `
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
